@@ -1,0 +1,110 @@
+ 
+.company-name{
+	height: 300px;
+	background-color:orange;
+	border:1px solid black;
+}
+.company-name h1{
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+}
+.about-designer{
+	display: flex;
+	justify-content: space-between;
+	border:1px solid black;
+}
+ 
+.details-about-designer p{
+	text-align: justify;
+	text-justify:inter-word; 
+}
+.details-about-designer h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: black;
+}
+ 
+ 
+.our-values{
+	border:1px solid black;
+	background-color: #cccccc;
+	display: flex;
+	justify-content: space-around;
+}
+ 
+.image-about-values{
+	text-align: center;
+	margin-top: 30px;
+}
+ 
+.details-about-values p{
+	text-align: justify;
+	text-justify:inter-word; 
+}
+.designer-services {
+	border:1px solid black;
+}
+.designer-services h1{
+	text-transform: capitalize;
+	text-align: center;
+}
+.image-sub-design-services ul{
+	display: flex;
+	justify-content: space-around;
+	 
+}
+.image-sub-design-services li{
+	list-style-type:none;
+}
+.image-sub-design-services p,h3{
+	text-transform: capitalize;
+	text-align: center;
+}
+.new-designs{
+	 
+	background-color: grey;
+	 
+}
+.new-designs h1,p{
+	text-transform: capitalize;
+	text-align: center;
+}
+.new-designs-images ul{
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	padding: 10px;
+}
+.new-designs-images img{
+	width: 200px;
+	height: 250px;
+}
+.image-border-design b{
+	margin-left: 500px;
+	display: block;
+	height: 2px;
+	width: 30%;
+	opacity: 0.3;
+	background-color: black;
+	flex: 1;
+}
+.image-border-design p{
+	font-size:5px;
+	color: red;
+}
+.our-customers h1{
+	text-align: center;
+	text-transform: capitalize;
+}
+.footer{
+	height: 200px;
+	background-color: grey;
+}
+.main-example{
+	 text-align: center;
+    padding: 30px 0px;
+}
+.img-circle{
+	height: 200px;
+}
