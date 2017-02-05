@@ -1,14 +1,16 @@
- 
-.company-name{
+.company-logo{
 	height: 300px;
-	background-color:orange;
-	/*border:1px solid black;*/*/
+	background-color: rgba(256,34,89,0.2);
+	 
 }
-.company-name h1{
-	text-transform: uppercase;
+.company-logo h1{
 	text-align: center;
-	color: white;
-	margin:0px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.company-logo p{
+	text-align: center;
+	text-transform: capitalize;
 }
 .about-designer{
 	display: flex;
@@ -18,6 +20,7 @@
 }
 .details-about-designer {
 	width: 70%;
+	padding: 10px;
 }
  
 .details-about-designer p{
@@ -29,8 +32,6 @@
 	text-transform: uppercase;
 	color: black;
 }
- 
- 
 .our-values{
 	/*border:1px solid black;*/
 	background-color: #cccccc;
@@ -38,7 +39,6 @@
 	justify-content: space-around;
 	padding: 20px 30px;
 }
- 
 .image-about-values{
 	text-align: center;
 	margin-top: 30px;
@@ -51,34 +51,38 @@
 }
 .image-about-designer img{
   width: 100%;
+  height: 300px;
+  
 }
-.details-about-values p{
-	text-align: justify;
-	text-justify:inter-word; 
-}
-.service{
+.designer-services{
 	text-align: center;
 }
-.service img{
-    text-align: center;
-      padding: 10px;
-    /*padding: 30px 0px;*/
-    /*background-image: url("back-ground.jpg");*/
-}
-.portfolio-image-section{
-	text-align: center;
-}
-.portfolio-image-section img{
+.designer-services img{
 	padding: 10px;
+	width: 100%;
+	height: 250px;
 }
-.customers{
-text-align: center;
-}
-.customer-images img{
-	padding: 10px;
-}
-.footer{
-	display: flex;
-	height: 200px;
-	width: 100%
-}
+ .portpolia-images{
+ 	text-align: center;
+ }
+ .portpolia-images img{
+ 	padding: 10px;
+ 	width: 100%;
+	height: 250px;
+ }
+ .our-customers{
+ 	text-align: center;
+ }
+ .our-customers img{
+ 	padding: 10px;
+ 	width: 100%;
+	height: 250px;
+ }
+ .footer{
+ 	width: 100%;
+ 	height: 200px;
+ 	background-color: black;
+ 	display: flex;
+ }
+  
+  
