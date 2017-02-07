@@ -9,7 +9,8 @@
   margin: 1px solid black;
 }
 .container{
-  padding: 0px;
+  padding: 0;
+  overflow: hidden;
 }
 .navbar-default .navbar-nav>li>a{
   color: white;
@@ -20,9 +21,10 @@
 .navbar-default .navbar-nav>li>a:active{
   color: #cccccc;
 }
-.navbar-nav{
+.navbar-nav>li>a{
   font-size: 20px;
   color: red;
+  line-height: 24px;
 }
 .icons img{
   align-items:  center;
@@ -137,10 +139,6 @@
   margin: auto;
   height: 300px;
 }
-.horizontal-slider{
-  width: 60%;
-   border: 10px solid grey;
-}
 span{
     width: 0px;
 }
@@ -190,8 +188,8 @@ background:white;
     width:100%;
 }
 .middle-images img{
-    height: 250px;
-    width: 250px;
+
+    width: 100%
   }
   .contain{
     padding: 20px
@@ -211,20 +209,33 @@ background:white;
    position: absolute;
  }
  .overlay {
-white-space: nowrap;
+  white-space: nowrap;
   position: absolute;
-  top: 223px;
-  bottom: 0;
-  left: 45px;
+  bottom: 80px;
+  left: 0;
   right:0;
-  height: 13%;
-  width: 200px;
+  margin: auto auto 0;
+  height: 12%;
+  width: 87%;
   opacity: 0;
   transition: .3s ease;
   background-color: #8B008B;
 }
+
+@media screen and (min-width: 400px) {
+ .overlay {
+  width: 89%;
+}
+}
+
+@media screen and (min-width: 700px) {
+ .overlay {
+  width: 94.5%;
+}
+}
+
 .middle-images {
-  //position: relative;
+  position: relative;
   padding: 20px;
 }
 
@@ -253,6 +264,7 @@ white-space: nowrap;
     text-align: center;
     padding: 30px 0px;
     background-image: url("back-ground.jpg");
+    background-size: 100%;
 }
 
  .brand_logo_image{
@@ -295,43 +307,4 @@ white-space: nowrap;
   border-radius: 2px;
   background-color: white;
   padding: 6px;
-}
- .vertical-slider{
-  width: 40%;
-  border:10px solid pink;
-   margin-left: 10px;
- }
-
-.carousel.vertical .item {
-   
-          transition: 0.6s ease top;
-}
-
-.carousel.vertical .active {
-  top: 0;
-}
-
-.carousel.vertical .next {
-  top: 400px;
-}
-
-.carousel.vertical .prev {
-  top: -400px;
-}
-
-.carousel.vertical .next.left,
-.carousel.vertical .prev.right {
-  top: 50%;
-}
-
-.carousel.vertical .active.left {
-  top: -400px;
-}
-.slider{
-  display: flex;
-  justify-content: space-between;
- 
-}
-.right-mark{
-  top: 20px;
 }
