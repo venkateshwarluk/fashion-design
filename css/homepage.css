@@ -224,13 +224,13 @@ background:white;
 
 @media screen and (min-width: 400px) {
  .overlay {
-  width: 89%;
+  width: 85%;
 }
 }
 
 @media screen and (min-width: 700px) {
  .overlay {
-  width: 94.5%;
+  width: 88.5%;
 }
 }
 
