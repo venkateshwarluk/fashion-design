@@ -1,6 +1,6 @@
+ 
  .main-page{
     width: 100%;
-
 }
 .container-fluid{
   display: flex;
@@ -95,7 +95,6 @@
 .icons:hover .icon-text1 {
     visibility: visible;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -299,7 +298,7 @@ white-space: nowrap;
  .vertical-slider{
   width: 40%;
   border:10px solid pink;
-   margin-left: 10px;
+  margin-left: 10px;
  }
 
 .carousel.vertical .item {
