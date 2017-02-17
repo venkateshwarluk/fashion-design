@@ -1,7 +1,4 @@
- 
-	
-
-.back-ground-image{
+ .back-ground-image{
 	height: 500px; 
 	background: url("D:/fashion-design/images/back-ground-image.jpg") no-repeat;
 	background-position: right  ;
@@ -135,3 +132,4 @@
  .social-media-images img:hover{
  	background-color:  blue;
  }
+ 
