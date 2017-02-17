@@ -1,90 +1,252 @@
+.vi-maincontent-list {
+    padding-top: 7%;
+}
+.vi-maincontent-list li {
+   line-height: 2;
+   list-style-type: none;
+   /*list-style-image: url('https://www.tutorialspoint.com/images/icon-bullet.png');*/
+}
+#myCarousel3 .item.active {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
 
+.vi-maincontent-list li::before {
+    font-family: 'Glyphicons Halflings';
+    color: #95c6d8;
+    content: "\e014";
+    position: relative;
+    left: -12px;
+    top: 2px;
+}
+.breadcrumb {
+    background-color: transparent;
+}
+.breadcrumb-item a{
+	color:black;
+}
+.ve-top-banner-col2, .ve-top-banner-col {
+  background: linear-gradient(to right, rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.8)), url('http://webdesign-finder.com/html/look/images/parallax/breadcrumbs2.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 
-.company-logo{
-	height: 300px;
-	background-color: rgba(256,34,89,0.2);
-	 
 }
-.company-logo h1{
-	text-align: center;
-	text-transform: uppercase;
-	margin: 0;
+.ve-top-banner-col2, .ve-top-banner-col2 .ve-top-banner p {
+    background:white;
 }
-.company-logo p{
-	text-align: center;
-	text-transform: capitalize;
+
+.ve-top-banner-col2 .ve-top-banner {
+    border-bottom-width: 0;
 }
-.about-designer{
-	display: flex;
-	justify-content: space-between;
-	/*border:1px solid black;*/
-	padding: 20px 30px;
+.ve-top-banner {
+    margin: 10% auto 8%;
+    display: inline-block;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+
 }
-.details-about-designer {
-	width: 70%;
-	padding: 10px;
+.maincontent{
+    line-height: 26px;
+    letter-spacing: 0.01em;
 }
+
+.ve-top-banner p {
+    display: inline-block;
+    position: relative;
+    font-family:'PT serif',"Open sans", sans-serif, serif;
+    background-color: #f4f5f6;
+    padding: 5px 10px;
+    top: -15px;
+}
+.ve-top-banner h1 {
+    color: #303030;
+    margin-top: -0.6em;
+    /*margin-top: -20px;*/
+    margin-bottom: 0.5em;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: sans-serif, serif;
+}
+
+@media screen and (min-width: 780px) {
+    .ve-top-banner h1 {
+        margin-top: -0.4.8em;
+        margin-bottom: 0.5em;
+        font-size: 50px;
+    }
+
+    .ve-top-banner p {
+        font-size: 20px;
+    }
+
+}
+
+p.mycontent {
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    word-spacing: 1.5px;
+}
+
+/*.ve-top-banner-col2 .maincontent p {
+    text-align: center;
+}
+*/
+/*slider section starts*/
+.background-image-section{
+    width: 100%;
+    background: url("D:/fashion-design/images/8.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    position: relative;
+}
+.background-image-color{
+    background-color: #95c6d8;
+    opacity: 0.8;
+
+}
+.quote-sign{
+    font-size:20em;
+
+}
+.josefin{
+    font-family: 'Cambria';
+}
+.quote-sign:before{
+    content: '”';
+    display: block;
+    position: relative;
+    top: 90px;
+    line-height: 75px;
+}
+.slider-heading{
+    margin-top: 100px;
+}
+.slider-heading h1{
+    font-size: 45px;
+    color: black;
+    font-family: 'Allerta';
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.slider-heading span {
+    background:#95c6d8; 
+    padding:0 10px;
+    opacity: 1;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.carousel-inner{
+    height: 200px;
+}
+
+.desing-manager span{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+.desing-manager{
+    margin-top: 20px;
+}
+.back-ground-slider{
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-indicators{
+    margin-bottom: 20px;
+    height: auto;
+}
+.service-right{
+    text-align: left;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.service-right p{
+    display:inline-block; 
+    position: absolute;
+    background-color: white;
+    top:10px;
+}
+.service-right h1{
+   border-top: 1px solid black; 
+   padding-top: 5%;
+   display:inline-block;
+   font-size: 50px;
+   font-weight: bold;
+}
+/*footer section starts*/
+           .footer-background-image{
+  background-image: url("C:/Users/venkatesh/Desktop/fashion-design/images/footer.png");
+  background-size: cover;
+  background-position: center;
+ }
+ .footer-background-color{
+  height: 100%;
+  opacity: 0.9;
+  overflow: hidden;
+ }
+ .footer-container{
+    padding:70px 40px 50px 40px;
+    
+ }
+ .footer-first-div p{
+  opacity: 0.7;
+  color:white;
+  line-height:20px;
+  font-family: 'Josefin Sans', sans-serif;
+ }
+ .footer-contact h4{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    border-left: 3px solid skyblue;
+    padding-left: 20px;
+    height: 23px;
+    margin-top: 5px;
+    opacity: 0.7;
+    font-size: 15px;
+ }
+.footer-map-icon{
+    margin-top: 40px;
+ }
+ .footer-send-mail a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+ }
+ .footer-send-mail a:hover{
+    color: grey;
+    opacity: 0.7;
+ }
+ .footer-call-icon span{
+  color: white;
+  opacity: 0.7;
+  margin-left: 10px;
+  font-size: 15px;
+ }
+ .vi-points h3::before {
+    font-family: 'Glyphicons Halflings';
+    position: relative;
+    left: -5%;
+ }
+ .vi-points div:nth-child(3) h3::before {
+    content: "\e046";
+ }
+
+.vi-points div:nth-child(2) h3::before {
+    content: "\e038";
+ }
+ .vi-points div:nth-child(4) h3::before {
+    content: "\e139";
+ }
+.vi-points div:nth-child(1) h3::before {
+    content: "\e135";
+ }
+
  
-.details-about-designer p{
-	text-align: justify;
-	text-justify:inter-word; 
-}
-.details-about-designer h2{
-	font-size: 30px;
-	text-transform: uppercase;
-	color: black;
-}
-.our-values{
-	/*border:1px solid black;*/
-	background-color: #cccccc;
-	display: flex;
-	justify-content: space-around;
-	padding: 20px 30px;
-}
-.image-about-values{
-	text-align: center;
-	margin-top: 30px;
-}
-.image-about-designer{
-	width: 30%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-.image-about-designer img{
-  width: 100%;
-  height: 300px;
-  
-}
-.designer-services{
-	text-align: center;
-}
-.designer-services img{
-	padding: 10px;
-	width: 100%;
-	height: 250px;
-}
- .portpolia-images{
- 	text-align: center;
- }
- .portpolia-images img{
- 	padding: 10px;
- 	width: 100%;
-	height: 250px;
- }
- .our-customers{
- 	text-align: center;
- }
- .our-customers img{
- 	padding: 10px;
- 	width: 100%;
-	height: 250px;
- }
- .footer{
- 	width: 100%;
- 	height: 200px;
- 	background-color: black;
- 	display: flex;
- }
-  
-  
