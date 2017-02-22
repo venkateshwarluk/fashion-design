@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  .back-ground-image{
 	height: 500px; 
 	background: url("D:/fashion-design/images/back-ground-image.jpg") no-repeat;
@@ -30,21 +31,66 @@
 	font-family:Fauna One;
 	margin-top: -13px;
 	width: 320px;
+=======
+ 
+  
+
+.back-ground-image{
+  height: 500px; 
+  background: url("C:/Users/venkatesh/Desktop/fashion-design/images/back ground1.jpg") no-repeat;
+  background-position: right  ;
+  background-size:  cover;
+}
+.back-ground-color{
+  background-color:#48D1CC;
+  opacity:  0.3;
+  height: 500px;
+}
+.middle-section{
+  text-align: center;
+  width: 100%;
+}
+
+.heading-about-us p{
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-top: 150px
+
+}
+.heading-about-us h1{
+  text-transform: uppercase;
+  font-size: 40px;
+  border-bottom: 1px solid grey;
+  color: black;
+  padding-bottom : 15px;
+  font-family:Fauna One;
+  margin-top: -13px;
+  width: 320px;
+>>>>>>> f684bb2eff5b0ad558322a6c20dda98659e3d7dc
     /* text-align: center; */
     margin: auto;
     border-bottom: 1px solid black;
 }
 .gallary-menu-bar {
 
+<<<<<<< HEAD
 	color: #000000;
 	padding: 10px;
 	font-size: 10px;
 	text-transform: uppercase;
+=======
+  color: #000000;
+  padding: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+>>>>>>> f684bb2eff5b0ad558322a6c20dda98659e3d7dc
 
 }
 
 
 .first-image-section{
+<<<<<<< HEAD
 	padding: 0;
 } 
 
@@ -64,11 +110,33 @@
 	margin-bottom: 0px;
 	margin-top: 0;
 	font-family: 'Josefin Sans', sans-serif;
+=======
+  padding: 0;
+} 
+
+.first-image img{
+  width: 100%;
+  height: 300px;
+}
+.nav{
+  padding-left: 0px;
+}
+.first-image-details h1{
+  text-transform: uppercase;
+  background-color: rgba(245, 245, 245, 0.9);
+  border-left: 3px solid skyblue;
+  font-size: 17px;
+  padding: 15px;
+  margin-bottom: 0px;
+  margin-top: 0;
+  font-family: 'Josefin Sans', sans-serif;
+>>>>>>> f684bb2eff5b0ad558322a6c20dda98659e3d7dc
     font-weight: 700;
     line-height: 1;
    
 }
 .footer{
+<<<<<<< HEAD
 	height: 200px;
 	background-color: #48D1CC;
 	display: flex;
@@ -77,6 +145,16 @@
 .fashion-images{
 	padding-left: 40px;
 	padding-right: 40px;
+=======
+  height: 200px;
+  background-color: #48D1CC;
+  display: flex;
+  width: 100%;
+}
+.fashion-images{
+  padding-left: 40px;
+  padding-right: 40px;
+>>>>>>> f684bb2eff5b0ad558322a6c20dda98659e3d7dc
 }
 .container {
   position: relative;
@@ -104,6 +182,7 @@
   left: 0;
 }
 .text{
+<<<<<<< HEAD
 	width: 80%;
 }
 .image-bar-details{
@@ -133,3 +212,33 @@
  	background-color:  blue;
  }
  
+=======
+  width: 80%;
+}
+.image-bar-details{
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 4px solid  skyblue;
+  height: 60px;
+  margin-top: 55px;
+}
+.properties{
+  color:black;
+  text-align: center;
+  text-transform: capitalize;
+  margin-left: 30px;
+  font-size: 15px;
+}
+.social-media-images{
+  margin-top: 30px;
+  margin-left: 100px;
+}
+.social-media-images img{
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+}
+ .social-media-images img:hover{
+  background-color:  blue;
+ }
+>>>>>>> f684bb2eff5b0ad558322a6c20dda98659e3d7dc

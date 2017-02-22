@@ -24,7 +24,7 @@
     background-color: transparent;
 }
 .breadcrumb-item a{
-	color:black;
+  color:black;
 }
 .ve-top-banner-col2, .ve-top-banner-col {
   background: linear-gradient(to right, rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.8)), url('http://webdesign-finder.com/html/look/images/parallax/breadcrumbs2.jpg');
@@ -248,5 +248,3 @@ p.mycontent {
 .vi-points div:nth-child(1) h3::before {
     content: "\e135";
  }
-
- 

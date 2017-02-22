@@ -35,14 +35,33 @@
 .navbar-default .navbar-nav>li>a:active{
   color: #cccccc;
 }
- 
- 
 .nav a:hover{
   color: white;
 }
- 
- 
- 
+
+
+
+.carousel.vertical .item {
+  transition: 0.6s ease-out  top;
+}
+
+.carousel.vertical .active {
+  top: 0;
+}
+
+.carousel.vertical .next {
+  top:400px;
+}
+
+.carousel.vertical .prev {
+  top: -400px;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   width: 100%;
@@ -68,25 +87,15 @@
 .tab-pane{
   background-color:#f5f5f5;
   margin-top: 30px;
-   
 }
-
 .first-image-section img{
   height: 300px;
-   }
-  
-.portfolia-section span{
-  font-size: 20px; 
-  background-color:#f5f5f5;
-   
-  text-transform: uppercase;
-  color: black;
 }
 .portfolia-section h2 {
-     border-bottom: 1px solid black;
-     line-height:0.1em; 
-     margin:10px 0 20px;
-     width: 100%;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: black;
+  text-align: center;
 }
 .portfolia{
   margin-top: 50px;
@@ -95,10 +104,8 @@
   text-transform: uppercase;
   font-size: 40px;
   color: black;
-  text-align: left;
-  display: flex;
-  flex-wrap: wrap;
- }
+  text-align: center;
+}
  .container {
   position: relative;
 }  
@@ -267,12 +274,10 @@
 .background-image-color{
   background-color: #95c6d8;
   opacity: 0.8;
-   
 }
 .quote-sign{
   font-size:250px;
-  
- }
+}
 .josefin{
   font-family: 'Cambria';
  }
@@ -296,7 +301,6 @@
 .center-align{
   text-align: center;
 }
-  
 .slider-heading span {
    background:#95c6d8; 
    padding:0 10px;
@@ -305,11 +309,10 @@
    letter-spacing: 5px;
    text-transform: uppercase;
  }
-  .carousel-inner{
+.carousel-inner{
     height: 280px;
 }
-   
-  .desing-manager span{
+.desing-manager span{
     text-transform: capitalize;
     font-size: 20px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -322,7 +325,6 @@
 .back-ground-slider{
   width: 100%;
   height: 560px;
-
 }
 .position-fixed{
   position: relative;
@@ -334,8 +336,7 @@
 .main-footer{
    background-color: #212121;
 }
- 
- .footer-background-image{
+.footer-background-image{
   background-image: url("D:/fashion-design/images/footer.png");
   background-size: cover;
   background-position: center;
@@ -346,10 +347,9 @@
   overflow: hidden;
  }
  .footer-container{
-    padding:70px 40px 50px 40px;
-    
- }
- .footer-first-div p{
+  padding:70px 40px 50px 40px;
+}
+.footer-first-div p{
   opacity: 0.7;
   color:white;
   line-height:20px;
@@ -402,19 +402,17 @@
 }
 .recent-post-images{
   display: flex;
-   
 }
 .recent-post-div h4{
-  
-    text-transform: uppercase;
-    font-size: 15px;
-    color: white;
-    border-left: 3px solid skyblue;
-    padding-left: 20px;
-    height: 23px;
-    margin-top: 5px;
-    opacity: 0.7;
-    font-size: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: white;
+  border-left: 3px solid skyblue;
+  padding-left: 20px;
+  height: 23px;
+  margin-top: 5px;
+  opacity: 0.7;
+  font-size: 15px;
 }
 .own-styles a{
   font-size: 15px;
@@ -428,7 +426,6 @@
   font-size: 13px;
   color: skyblue;
   margin-left: 15px;
-
 }
 .padding-image{
   margin-top: 40px;
@@ -437,15 +434,15 @@
   margin-bottom: 20px;
 }
 .footer-social-div h4{
-    text-transform: uppercase;
-    font-size: 15px;
-    color: white;
-    border-left: 3px solid skyblue;
-    padding-left: 20px;
-    height: 23px;
-    margin-top: 5px;
-    opacity: 0.7;
-    font-size: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: white;
+  border-left: 3px solid skyblue;
+  padding-left: 20px;
+  height: 23px;
+  margin-top: 5px;
+  opacity: 0.7;
+  font-size: 15px;
 }
 .search-bar button{
   background-color: transparent;
@@ -477,7 +474,6 @@
   font-weight: bold;
 }
 .footer-social-media-icons {
-   
   margin-top: 25px;
 }
 .footer-social-media-icons a{
@@ -491,4 +487,79 @@
 .sub-footer-details {
   text-align: center;
   padding: 15px;
+}
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+}
+.nav-tabs, .nav-pills {
+  text-align:center;
+}
+.nav-pills li,a{
+  color:black; ;
+}
+
+
+@media screen and (max-width: 320px)
+{
+.first-image-section img{
+  height: 300px;
+  width: 100%;
+}
+.overlay1{
+  width: 90%;
+}
+.overlay{
+  width: 90%;
+}
+}
+@media screen and (max-width: 768px) and (min-width:321px )
+{
+.first-image-section img{
+  height: 300px;
+  width: 100%;
+}
+.overlay1{
+  width: 92%;
+}
+.overlay{
+  width: 92%;
+} 
+}
+@media screen and (max-width: 768px)
+{
+  .model{
+    width: 100%;
+    height:1000px;
+  }
+}
+@media screen and (max-width: 320px)
+{
+  .model{
+    width: 100%;
+    height:800px;
+  }
+  .model-heading h1{
+    font-size: 25px;
+  }
+  .model-heading p{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 320px)
+{
+  .portfolia-section h2{
+    font-size: 15px;
+  }
+  .portfolia-section h1{
+    font-size: 25px;
+  }
+  .nav-pills li,a{
+    font-size: 11px;
+    padding: 6px !important;
+    font-weight: bold;
+  }
+  .nav-pills{
+    
+  }
 }
