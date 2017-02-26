@@ -20,6 +20,10 @@
     margin-top: 10px;
     display: flex;
   }
+  .ve-top-banner h1{
+  font-size: 25px !important;
+}
+
 }
 .navbar{
   margin-bottom: 0px;
