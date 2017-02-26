@@ -123,6 +123,9 @@
 .breadcrumb {
   background-color: transparent;
 }
+.breadcrumb a{
+  color:black;
+}
 .ve-top-banner-col2, .ve-top-banner-col {
   background: linear-gradient(to right, rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.8)), url('http://webdesign-finder.com/html/look/images/parallax/breadcrumbs2.jpg');
   background-size: 100% 100%;
