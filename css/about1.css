@@ -27,7 +27,7 @@
   color:black;
 }
 .ve-top-banner-col2, .ve-top-banner-col {
-  background: linear-gradient(to right, rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.8)), url('http://webdesign-finder.com/html/look/images/parallax/breadcrumbs2.jpg');
+  background: linear-gradient(to right, rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.8)), url('D:/fashion-design/images/breadcrumbs5.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -35,22 +35,19 @@
 .ve-top-banner-col2, .ve-top-banner-col2 .ve-top-banner p {
     background:white;
 }
-
 .ve-top-banner-col2 .ve-top-banner {
     border-bottom-width: 0;
 }
 .ve-top-banner {
-    margin: 10% auto 8%;
+    margin: 10% auto 8% ;
     display: inline-block;
     border-top:1px solid black;
     border-bottom:1px solid black;
-
 }
 .maincontent{
     line-height: 26px;
     letter-spacing: 0.01em;
 }
-
 .ve-top-banner p {
     display: inline-block;
     position: relative;
@@ -68,20 +65,16 @@
     font-weight: bolder;
     font-family: sans-serif, serif;
 }
-
 @media screen and (min-width: 780px) {
     .ve-top-banner h1 {
         margin-top: -0.4.8em;
         margin-bottom: 0.5em;
         font-size: 50px;
     }
-
     .ve-top-banner p {
         font-size: 20px;
     }
-
 }
-
 p.mycontent {
     line-height: 1.7;
     letter-spacing: 0.5px;
@@ -103,11 +96,9 @@ p.mycontent {
 .background-image-color{
     background-color: #95c6d8;
     opacity: 0.8;
-
 }
 .quote-sign{
     font-size:20em;
-
 }
 .josefin{
     font-family: 'Cambria';
@@ -181,7 +172,7 @@ p.mycontent {
    font-weight: bold;
 }
 /*footer section starts*/
-           .footer-background-image{
+.footer-background-image{
   background-image: url("C:/Users/venkatesh/Desktop/fashion-design/images/footer.png");
   background-size: cover;
   background-position: center;
