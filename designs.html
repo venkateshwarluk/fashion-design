@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="stylesheet" href="./libs/bootstrap-3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./libs/jquery/jquery-3.1.1.min.js"></script>
+    <script src="./libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/designs.css">
-    <script src="./javascript/app.js"></script>
-    <script src="./javascript/designs.js"></script>
-
+    <link rel="stylesheet" href="css/designs.css">
+    <script src="./js/app.js"></script>
+    <script src="./js/designs.js"></script>
 </head>
+
 <body>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -30,27 +32,29 @@
                     <li><a href="./homepage.html">Home</a></li>
                     <li><a href="./about1.html">About</a></li>
                     <li><a href="./designs.html" class="dropbtn">Designs</a></li>
-
-                    <li >
+                    <li>
                         <a href="#">Social Networks<span class="caret"></span></a>
-
                     </li>
                     <li><a href="./contact.html">Contact Us</a></li>
-                </ul>     
-
+                </ul>
                 <ul class="nav navbar-nav navbar-right ve-nav-image-link">
-                    <li><a href="#">
-                        <span class="glyphicon glyphicon-shopping-cart"></span>
-                        <!-- <img src="images/cart.png"> -->
-                    </a></li>
-                    <li><a href="#">
-                        <span class="glyphicon glyphicon-heart"></span>
-                        <!-- <img src="images/favorite (1).png">-->
-                    </a></li> 
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                            <!-- <img src="images/cart.png"> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <!-- <img src="images/favorite (1).png">-->
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </nav> <!-- Nav section ends -->
+    </nav>
+    <!-- Nav section ends -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 text-center ve-top-banner-col">
@@ -62,19 +66,22 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div> 
-                    <button class="btn btn-primary gal-ctrls" data-ctrl="all">All</button>
-                    <button class="btn btn-primary gal-ctrls" data-ctrl="fashion">Fashion</button>
-                    <button class="btn btn-primary gal-ctrls" data-ctrl="studio">Studio</button>
-                    <button class="btn btn-primary gal-ctrls" data-ctrl="session">Session</button>
-                </div>
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#" class="gal-ctrls" data-ctrl="all">All</a>
+                    </li>
+                    <li>
+                        <a href="#" class="gal-ctrls" data-ctrl="fashion">Fashion</a>
+                    </li>
+                    <li>
+                        <a href="#" class="gal-ctrls" data-ctrl="studio">Studio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="gal-ctrls" data-ctrl="session">Session</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <script>
-
-
-
-        </script>
         <!-- End of the top banner -->
         <div class="row">
             <div class="col-md-12">
@@ -85,12 +92,18 @@
                         <div class="gal-overlay-hover">
                             <h3 class="gal-overlay-hover-hd">Isabella Mack<br><small>Top Model</small></h3>
                             <blockquote class="gal-overlay-item-meta">
-                                <div><span class="bold">Height</span><br><span>185</span></div>
-                                <div><span class="bold">Bust</span><br><span>79</span></div>
-                                <div><span class="bold">Waist</span><br><span>59</span></div>
-                                <div><span class="bold">Hips</span><br><span>87</span></div>
-                                <div><span class="bold">Shoe</span><br><span>39</span></div>
-                                <div><span class="bold">Eyes</span><br><span>blue</span></div>
+                                <div><span class="bold">Height</span>
+                                    <br><span>185</span></div>
+                                <div><span class="bold">Bust</span>
+                                    <br><span>79</span></div>
+                                <div><span class="bold">Waist</span>
+                                    <br><span>59</span></div>
+                                <div><span class="bold">Hips</span>
+                                    <br><span>87</span></div>
+                                <div><span class="bold">Shoe</span>
+                                    <br><span>39</span></div>
+                                <div><span class="bold">Eyes</span>
+                                    <br><span>blue</span></div>
                             </blockquote>
                             <ul class="gal-social-icon-list">
                                 <li><a href="http://fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -98,22 +111,26 @@
                                 <li><a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="http://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
-
                         </div>
                     </div>
-
                     <div class="col-md-4 galary-col studi4o">
                         <img src="images/3.jpg" class="img-responsive">
-                                                <div class="gal-overlay">Isabella Mack</div>
+                        <div class="gal-overlay">Isabella Mack</div>
                         <div class="gal-overlay-hover">
                             <h3 class="gal-overlay-hover-hd">Isabella Mack<br><small>Top Model</small></h3>
                             <blockquote class="gal-overlay-item-meta">
-                                <div><span class="bold">Height</span><br><span>185</span></div>
-                                <div><span class="bold">Bust</span><br><span>79</span></div>
-                                <div><span class="bold">Waist</span><br><span>59</span></div>
-                                <div><span class="bold">Hips</span><br><span>87</span></div>
-                                <div><span class="bold">Shoe</span><br><span>39</span></div>
-                                <div><span class="bold">Eyes</span><br><span>blue</span></div>
+                                <div><span class="bold">Height</span>
+                                    <br><span>185</span></div>
+                                <div><span class="bold">Bust</span>
+                                    <br><span>79</span></div>
+                                <div><span class="bold">Waist</span>
+                                    <br><span>59</span></div>
+                                <div><span class="bold">Hips</span>
+                                    <br><span>87</span></div>
+                                <div><span class="bold">Shoe</span>
+                                    <br><span>39</span></div>
+                                <div><span class="bold">Eyes</span>
+                                    <br><span>blue</span></div>
                             </blockquote>
                             <ul class="gal-social-icon-list">
                                 <li><a href="http://fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -121,21 +138,26 @@
                                 <li><a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="http://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
-
                         </div>
                     </div>
                     <div class="col-md-4 galary-col">
                         <img src="images/3.jpg" class="img-responsive">
-                                                <div class="gal-overlay">Isabella Mack</div>
+                        <div class="gal-overlay">Isabella Mack</div>
                         <div class="gal-overlay-hover">
                             <h3 class="gal-overlay-hover-hd">Isabella Mack<br><small>Top Model</small></h3>
                             <blockquote class="gal-overlay-item-meta">
-                                <div><span class="bold">Height</span><br><span>185</span></div>
-                                <div><span class="bold">Bust</span><br><span>79</span></div>
-                                <div><span class="bold">Waist</span><br><span>59</span></div>
-                                <div><span class="bold">Hips</span><br><span>87</span></div>
-                                <div><span class="bold">Shoe</span><br><span>39</span></div>
-                                <div><span class="bold">Eyes</span><br><span>blue</span></div>
+                                <div><span class="bold">Height</span>
+                                    <br><span>185</span></div>
+                                <div><span class="bold">Bust</span>
+                                    <br><span>79</span></div>
+                                <div><span class="bold">Waist</span>
+                                    <br><span>59</span></div>
+                                <div><span class="bold">Hips</span>
+                                    <br><span>87</span></div>
+                                <div><span class="bold">Shoe</span>
+                                    <br><span>39</span></div>
+                                <div><span class="bold">Eyes</span>
+                                    <br><span>blue</span></div>
                             </blockquote>
                             <ul class="gal-social-icon-list">
                                 <li><a href="http://fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -143,22 +165,26 @@
                                 <li><a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="http://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
-
                         </div>
                     </div>
-
                     <div class="col-md-4 galary-col studio fashion">
                         <img src="images/3.jpg" class="img-responsive">
-                                                <div class="gal-overlay">Isabella Mack</div>
+                        <div class="gal-overlay">Isabella Mack</div>
                         <div class="gal-overlay-hover">
                             <h3 class="gal-overlay-hover-hd">Isabella Mack<br><small>Top Model</small></h3>
                             <blockquote class="gal-overlay-item-meta">
-                                <div><span class="bold">Height</span><br><span>185</span></div>
-                                <div><span class="bold">Bust</span><br><span>79</span></div>
-                                <div><span class="bold">Waist</span><br><span>59</span></div>
-                                <div><span class="bold">Hips</span><br><span>87</span></div>
-                                <div><span class="bold">Shoe</span><br><span>39</span></div>
-                                <div><span class="bold">Eyes</span><br><span>blue</span></div>
+                                <div><span class="bold">Height</span>
+                                    <br><span>185</span></div>
+                                <div><span class="bold">Bust</span>
+                                    <br><span>79</span></div>
+                                <div><span class="bold">Waist</span>
+                                    <br><span>59</span></div>
+                                <div><span class="bold">Hips</span>
+                                    <br><span>87</span></div>
+                                <div><span class="bold">Shoe</span>
+                                    <br><span>39</span></div>
+                                <div><span class="bold">Eyes</span>
+                                    <br><span>blue</span></div>
                             </blockquote>
                             <ul class="gal-social-icon-list">
                                 <li><a href="http://fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -166,21 +192,26 @@
                                 <li><a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="http://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
-
                         </div>
                     </div>
                     <div class="col-md-4 galary-col studio session">
                         <img src="images/5.jpg" class="img-responsive">
-                                                <div class="gal-overlay">Isabella Mack</div>
+                        <div class="gal-overlay">Isabella Mack</div>
                         <div class="gal-overlay-hover">
                             <h3 class="gal-overlay-hover-hd">Isabella Mack<br><small>Top Model</small></h3>
                             <blockquote class="gal-overlay-item-meta">
-                                <div><span class="bold">Height</span><br><span>185</span></div>
-                                <div><span class="bold">Bust</span><br><span>79</span></div>
-                                <div><span class="bold">Waist</span><br><span>59</span></div>
-                                <div><span class="bold">Hips</span><br><span>87</span></div>
-                                <div><span class="bold">Shoe</span><br><span>39</span></div>
-                                <div><span class="bold">Eyes</span><br><span>blue</span></div>
+                                <div><span class="bold">Height</span>
+                                    <br><span>185</span></div>
+                                <div><span class="bold">Bust</span>
+                                    <br><span>79</span></div>
+                                <div><span class="bold">Waist</span>
+                                    <br><span>59</span></div>
+                                <div><span class="bold">Hips</span>
+                                    <br><span>87</span></div>
+                                <div><span class="bold">Shoe</span>
+                                    <br><span>39</span></div>
+                                <div><span class="bold">Eyes</span>
+                                    <br><span>blue</span></div>
                             </blockquote>
                             <ul class="gal-social-icon-list">
                                 <li><a href="http://fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -188,21 +219,26 @@
                                 <li><a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="http://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
-
                         </div>
                     </div>
                     <div class="col-md-4 galary-col fashion">
                         <img src="images/6.jpg" class="img-responsive">
-                                                <div class="gal-overlay">Isabella Mack</div>
+                        <div class="gal-overlay">Isabella Mack</div>
                         <div class="gal-overlay-hover">
                             <h3 class="gal-overlay-hover-hd">Isabella Mack<br><small>Top Model</small></h3>
                             <blockquote class="gal-overlay-item-meta">
-                                <div><span class="bold">Height</span><br><span>185</span></div>
-                                <div><span class="bold">Bust</span><br><span>79</span></div>
-                                <div><span class="bold">Waist</span><br><span>59</span></div>
-                                <div><span class="bold">Hips</span><br><span>87</span></div>
-                                <div><span class="bold">Shoe</span><br><span>39</span></div>
-                                <div><span class="bold">Eyes</span><br><span>blue</span></div>
+                                <div><span class="bold">Height</span>
+                                    <br><span>185</span></div>
+                                <div><span class="bold">Bust</span>
+                                    <br><span>79</span></div>
+                                <div><span class="bold">Waist</span>
+                                    <br><span>59</span></div>
+                                <div><span class="bold">Hips</span>
+                                    <br><span>87</span></div>
+                                <div><span class="bold">Shoe</span>
+                                    <br><span>39</span></div>
+                                <div><span class="bold">Eyes</span>
+                                    <br><span>blue</span></div>
                             </blockquote>
                             <ul class="gal-social-icon-list">
                                 <li><a href="http://fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -210,22 +246,26 @@
                                 <li><a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="http://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
-
                         </div>
                     </div>
-
                     <div class="col-md-4 galary-col fashion">
                         <img src="images/4.jpg" class="img-responsive">
-                                                <div class="gal-overlay">Isabella Mack</div>
+                        <div class="gal-overlay">Isabella Mack</div>
                         <div class="gal-overlay-hover">
                             <h3 class="gal-overlay-hover-hd">Isabella Mack<br><small>Top Model</small></h3>
                             <blockquote class="gal-overlay-item-meta">
-                                <div><span class="bold">Height</span><br><span>185</span></div>
-                                <div><span class="bold">Bust</span><br><span>79</span></div>
-                                <div><span class="bold">Waist</span><br><span>59</span></div>
-                                <div><span class="bold">Hips</span><br><span>87</span></div>
-                                <div><span class="bold">Shoe</span><br><span>39</span></div>
-                                <div><span class="bold">Eyes</span><br><span>blue</span></div>
+                                <div><span class="bold">Height</span>
+                                    <br><span>185</span></div>
+                                <div><span class="bold">Bust</span>
+                                    <br><span>79</span></div>
+                                <div><span class="bold">Waist</span>
+                                    <br><span>59</span></div>
+                                <div><span class="bold">Hips</span>
+                                    <br><span>87</span></div>
+                                <div><span class="bold">Shoe</span>
+                                    <br><span>39</span></div>
+                                <div><span class="bold">Eyes</span>
+                                    <br><span>blue</span></div>
                             </blockquote>
                             <ul class="gal-social-icon-list">
                                 <li><a href="http://fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -233,21 +273,26 @@
                                 <li><a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="http://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
-
                         </div>
                     </div>
                     <div class="col-md-4 galary-col studio">
                         <img src="images/3.jpg" class="img-responsive">
-                                                <div class="gal-overlay">Isabella Mack</div>
+                        <div class="gal-overlay">Isabella Mack</div>
                         <div class="gal-overlay-hover">
                             <h3 class="gal-overlay-hover-hd">Isabella Mack<br><small>Top Model</small></h3>
                             <blockquote class="gal-overlay-item-meta">
-                                <div><span class="bold">Height</span><br><span>185</span></div>
-                                <div><span class="bold">Bust</span><br><span>79</span></div>
-                                <div><span class="bold">Waist</span><br><span>59</span></div>
-                                <div><span class="bold">Hips</span><br><span>87</span></div>
-                                <div><span class="bold">Shoe</span><br><span>39</span></div>
-                                <div><span class="bold">Eyes</span><br><span>blue</span></div>
+                                <div><span class="bold">Height</span>
+                                    <br><span>185</span></div>
+                                <div><span class="bold">Bust</span>
+                                    <br><span>79</span></div>
+                                <div><span class="bold">Waist</span>
+                                    <br><span>59</span></div>
+                                <div><span class="bold">Hips</span>
+                                    <br><span>87</span></div>
+                                <div><span class="bold">Shoe</span>
+                                    <br><span>39</span></div>
+                                <div><span class="bold">Eyes</span>
+                                    <br><span>blue</span></div>
                             </blockquote>
                             <ul class="gal-social-icon-list">
                                 <li><a href="http://fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -255,21 +300,26 @@
                                 <li><a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="http://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
-
                         </div>
                     </div>
                     <div class="col-md-4 galary-col session">
                         <img src="images/2.jpg" class="img-responsive">
-                                                <div class="gal-overlay">Isabella Mack</div>
+                        <div class="gal-overlay">Isabella Mack</div>
                         <div class="gal-overlay-hover">
                             <h3 class="gal-overlay-hover-hd">Isabella Mack<br><small>Top Model</small></h3>
                             <blockquote class="gal-overlay-item-meta">
-                                <div><span class="bold">Height</span><br><span>185</span></div>
-                                <div><span class="bold">Bust</span><br><span>79</span></div>
-                                <div><span class="bold">Waist</span><br><span>59</span></div>
-                                <div><span class="bold">Hips</span><br><span>87</span></div>
-                                <div><span class="bold">Shoe</span><br><span>39</span></div>
-                                <div><span class="bold">Eyes</span><br><span>blue</span></div>
+                                <div><span class="bold">Height</span>
+                                    <br><span>185</span></div>
+                                <div><span class="bold">Bust</span>
+                                    <br><span>79</span></div>
+                                <div><span class="bold">Waist</span>
+                                    <br><span>59</span></div>
+                                <div><span class="bold">Hips</span>
+                                    <br><span>87</span></div>
+                                <div><span class="bold">Shoe</span>
+                                    <br><span>39</span></div>
+                                <div><span class="bold">Eyes</span>
+                                    <br><span>blue</span></div>
                             </blockquote>
                             <ul class="gal-social-icon-list">
                                 <li><a href="http://fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -277,22 +327,26 @@
                                 <li><a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="http://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
-
                         </div>
                     </div>
-
                     <div class="col-md-4 galary-col session">
                         <img src="images/4.jpg" class="img-responsive">
-                                                <div class="gal-overlay">Isabella Mack</div>
+                        <div class="gal-overlay">Isabella Mack</div>
                         <div class="gal-overlay-hover">
                             <h3 class="gal-overlay-hover-hd">Isabella Mack<br><small>Top Model</small></h3>
                             <blockquote class="gal-overlay-item-meta">
-                                <div><span class="bold">Height</span><br><span>185</span></div>
-                                <div><span class="bold">Bust</span><br><span>79</span></div>
-                                <div><span class="bold">Waist</span><br><span>59</span></div>
-                                <div><span class="bold">Hips</span><br><span>87</span></div>
-                                <div><span class="bold">Shoe</span><br><span>39</span></div>
-                                <div><span class="bold">Eyes</span><br><span>blue</span></div>
+                                <div><span class="bold">Height</span>
+                                    <br><span>185</span></div>
+                                <div><span class="bold">Bust</span>
+                                    <br><span>79</span></div>
+                                <div><span class="bold">Waist</span>
+                                    <br><span>59</span></div>
+                                <div><span class="bold">Hips</span>
+                                    <br><span>87</span></div>
+                                <div><span class="bold">Shoe</span>
+                                    <br><span>39</span></div>
+                                <div><span class="bold">Eyes</span>
+                                    <br><span>blue</span></div>
                             </blockquote>
                             <ul class="gal-social-icon-list">
                                 <li><a href="http://fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -300,21 +354,26 @@
                                 <li><a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="http://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
-
                         </div>
                     </div>
                     <div class="col-md-4 galary-col fashion">
                         <img src="images/3.jpg" class="img-responsive">
-                                                <div class="gal-overlay">Isabella Mack</div>
+                        <div class="gal-overlay">Isabella Mack</div>
                         <div class="gal-overlay-hover">
                             <h3 class="gal-overlay-hover-hd">Isabella Mack<br><small>Top Model</small></h3>
                             <blockquote class="gal-overlay-item-meta">
-                                <div><span class="bold">Height</span><br><span>185</span></div>
-                                <div><span class="bold">Bust</span><br><span>79</span></div>
-                                <div><span class="bold">Waist</span><br><span>59</span></div>
-                                <div><span class="bold">Hips</span><br><span>87</span></div>
-                                <div><span class="bold">Shoe</span><br><span>39</span></div>
-                                <div><span class="bold">Eyes</span><br><span>blue</span></div>
+                                <div><span class="bold">Height</span>
+                                    <br><span>185</span></div>
+                                <div><span class="bold">Bust</span>
+                                    <br><span>79</span></div>
+                                <div><span class="bold">Waist</span>
+                                    <br><span>59</span></div>
+                                <div><span class="bold">Hips</span>
+                                    <br><span>87</span></div>
+                                <div><span class="bold">Shoe</span>
+                                    <br><span>39</span></div>
+                                <div><span class="bold">Eyes</span>
+                                    <br><span>blue</span></div>
                             </blockquote>
                             <ul class="gal-social-icon-list">
                                 <li><a href="http://fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -322,21 +381,26 @@
                                 <li><a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="http://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
-
                         </div>
                     </div>
                     <div class="col-md-4 galary-col session">
                         <img src="images/2.jpg" class="img-responsive">
-                                                <div class="gal-overlay">Isabella Mack</div>
+                        <div class="gal-overlay">Isabella Mack</div>
                         <div class="gal-overlay-hover">
                             <h3 class="gal-overlay-hover-hd">Isabella Mack<br><small>Top Model</small></h3>
                             <blockquote class="gal-overlay-item-meta">
-                                <div><span class="bold">Height</span><br><span>185</span></div>
-                                <div><span class="bold">Bust</span><br><span>79</span></div>
-                                <div><span class="bold">Waist</span><br><span>59</span></div>
-                                <div><span class="bold">Hips</span><br><span>87</span></div>
-                                <div><span class="bold">Shoe</span><br><span>39</span></div>
-                                <div><span class="bold">Eyes</span><br><span>blue</span></div>
+                                <div><span class="bold">Height</span>
+                                    <br><span>185</span></div>
+                                <div><span class="bold">Bust</span>
+                                    <br><span>79</span></div>
+                                <div><span class="bold">Waist</span>
+                                    <br><span>59</span></div>
+                                <div><span class="bold">Hips</span>
+                                    <br><span>87</span></div>
+                                <div><span class="bold">Shoe</span>
+                                    <br><span>39</span></div>
+                                <div><span class="bold">Eyes</span>
+                                    <br><span>blue</span></div>
                             </blockquote>
                             <ul class="gal-social-icon-list">
                                 <li><a href="http://fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -344,23 +408,19 @@
                                 <li><a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="http://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
-
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-
     <!-- End of the container -->
-
     <div class="container-fluid">
         <div class="row sub-footer-one">
             <div class="col-md-12">
                 <div class="row">
                     <div class="footer-first-div col-md-3 col-sm-6 col-xs-12">
-                        <img src="./images/logo_dark.png">  
+                        <img src="./images/logo_dark.png">
                         <p style="margin-top: 30px;">Nam viverra ullamcorper neque eget scelerisque. Nullam elementum dictum libero, id aliquam elit efficitur at.</p>
                         <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
                     </div>
@@ -376,93 +436,92 @@
                                     <img src="images/phone-receiver.png">
                                     <span>8 (800) 456-2698, 
                                         <br>8 (800) 456-2643</span>
-                                    </div>
-                                    <div class="footer-send-mail">
-                                        <img src="images/send-mail.png">
-                                        <a href="#">agency@support.com</a>
-                                    </div>
                                 </div>
-                            </div>          
-                        </div>
-                        <div class="footer-first-div col-md-3 col-sm-6 col-xs-12">
-                            <div class="recent-post-div">
-                                <blockquote>recent posts</blockquote>
-                                <ul class="media-list padding-image">
-                                    <li class="media media-padding">
-                                        <a class="media-left"  >
-                                            <img class="media-object" src="images/recent_post2.jpg" alt="">
-                                        </a>
-                                        <div class="media-body media-middle own-styles">
-                                            <a href="blog-single-right.html" style="text-decoration: none;">MAE - first modeling experience in 19 years.</a>
-                                            <span class="date highlight fontsize_12">16 Sep 2016</span>
-                                        </div>
-                                    </li>
-                                    <li class="media">
-                                        <a class="media-left"  >
-                                            <img class="media-object" src="images/recent_post1.jpg" alt="">
-                                        </a>
-                                        <div class="media-body media-middle own-styles">
-                                            <a href="blog-single-right.html" style="text-decoration: none;">Cinderella story in the pages of the portal.</a>
-                                            <span class="date highlight fontsize_12">16 Sep 2016</span>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <div class="footer-send-mail">
+                                    <img src="images/send-mail.png">
+                                    <a href="#">agency@support.com</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="footer-first-div col-md-3 col-sm-6 col-xs-12">
-                            <div class=" footer-social-div">
-                                <blockquote>newsletter signup</blockquote>
-                                <p>Don´t miss to subscribe to our news feeds, kindly fill the form below.</p>
-                                <div class="search-bar">
-                                    <input class="nofocus-shadow" type="email" name="" placeholder="enter email address">
-                                    <button type="submit">></button>
-                                </div>
-                                <p class="footer-social-media-icons">
-                                    <a href="http://fb.com">
-                                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="http://plus.google.com">
-                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="http://twitter.com">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="http://instagram.com">
-                                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="http://pinterest.com">
-                                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>         
                     </div>
-                </div>
-            </div>
-
-            <div class="row sub-footer-two">
-                <div class="col-md-12">
-                    <div class="row">
-
-                        <div class="col-md-5 text-center text-md-left">
-                            <p class="greylinks">©Model Agency 2016. Created with
-                                <i class="flaticon-shapes highlight"></i> by
-                                <a href="http://modernwebtemplates.com">MWTemplates</a>
-                            </p>
-                        </div>
-                        <div class="col-md-7 text-right hidden-xs hidden-sm">
-                            <ul class="menu sf-menu sf-js-enabled sf-arrows">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">Pages</a></li>
-                                <li><a href="models.html">Models</a></li>
-                                <li><a href="appointment.html">Appointment</a></li>
-                                <li><a href="faq.html">Faq</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                    <div class="footer-first-div col-md-3 col-sm-6 col-xs-12">
+                        <div class="recent-post-div">
+                            <blockquote>recent posts</blockquote>
+                            <ul class="media-list padding-image">
+                                <li class="media media-padding">
+                                    <a class="media-left">
+                                        <img class="media-object" src="images/recent_post2.jpg" alt="">
+                                    </a>
+                                    <div class="media-body media-middle own-styles">
+                                        <a href="blog-single-right.html" style="text-decoration: none;">MAE - first modeling experience in 19 years.</a>
+                                        <span class="date highlight fontsize_12">16 Sep 2016</span>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <a class="media-left">
+                                        <img class="media-object" src="images/recent_post1.jpg" alt="">
+                                    </a>
+                                    <div class="media-body media-middle own-styles">
+                                        <a href="blog-single-right.html" style="text-decoration: none;">Cinderella story in the pages of the portal.</a>
+                                        <span class="date highlight fontsize_12">16 Sep 2016</span>
+                                    </div>
+                                </li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="footer-first-div col-md-3 col-sm-6 col-xs-12">
+                        <div class=" footer-social-div">
+                            <blockquote>newsletter signup</blockquote>
+                            <p>Don´t miss to subscribe to our news feeds, kindly fill the form below.</p>
+                            <div class="search-bar">
+                                <input class="nofocus-shadow" type="email" name="" placeholder="enter email address">
+                                <button type="submit">></button>
+                            </div>
+                            <p class="footer-social-media-icons">
+                                <a href="http://fb.com">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="http://plus.google.com">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                </a>
+                                <a href="http://twitter.com">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="http://instagram.com">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                                <a href="http://pinterest.com">
+                                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
-    </html>
+        <div class="row sub-footer-two">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-5 text-center text-md-left">
+                        <p class="greylinks">©Model Agency 2016. Created with
+                            <i class="flaticon-shapes highlight"></i> by
+                            <a href="http://modernwebtemplates.com">MWTemplates</a>
+                        </p>
+                    </div>
+                    <div class="col-md-7 text-right hidden-xs hidden-sm">
+                        <ul class="menu sf-menu sf-js-enabled sf-arrows">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">Pages</a></li>
+                            <li><a href="models.html">Models</a></li>
+                            <li><a href="appointment.html">Appointment</a></li>
+                            <li><a href="faq.html">Faq</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

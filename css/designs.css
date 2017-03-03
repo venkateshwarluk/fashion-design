@@ -8,29 +8,25 @@
 }
 
 .galary-col .gal-overlay {
-  left: 0;
-  transition: left 1s;
+  transform-origin: right;
+  transform: scaleX(1);
+  transition: transform 1s;
 }
 .galary-col:hover .gal-overlay {
-  left: 100%;
+  transform: scaleX(0);
 }
 
-
 .galary-col .gal-overlay-hover {
-  visibility: hidden;
-  background-color: transparent;
+  background-color: rgba(240, 240, 240, 0.9);
   width: 100%;
   border-width: 0;
-  left:100%;
-  padding-top: 7%;
-  padding-bottom: 7%;
-  transition: left 2s;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 1s;
 }
 
 .galary-col:hover .gal-overlay-hover {
-  background-color: rgba(240, 240, 240, 0.9);
-  visibility: visible;
-  left:0;
+  transform: scaleX(1);
 }
 
 .gal-overlay-item-meta div {
