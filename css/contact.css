@@ -1,189 +1,214 @@
 .contact-banner {
-  padding: 6%;
-}
-.contact-form .form-control {
-  border-radius: 0;
-  border-color: rgba(48, 48, 48, 0.4);
-  padding: 7px 20px 9px;
-}
-.contact-form .form-control:focus {
-  box-shadow: none;
-}
-.contact-form button {
-  background-color: #303030;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1em;
-  color: white;
-  border-radius: 0;
-  border-width: 0;
-}
-.contact-form button:hover {
-  background-color: #f5f5f5;
-  color: black;
-}
-.contact-banner.left .contact-details p {
-  display: table-cell;
-  padding: 5px;
-  line-height: 1.7;
-}
-.contact-banner.left > p {
-  font-family: 'Open Sans', sans-serif;
-  margin: 20px auto;
-  display: block;
-  color: #616161;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-}
-.contact-banner.left .contact-details p:nth-child(odd) {
-  font-family: 'Josefin Sans', sans-serif;
-  white-space: pre;
-  color: #616161;
-  font-weight: bold;
-}
-.contact-banner.left .contact-details p:nth-child(even) a {
-  padding:10px;
-  color: black;
-}
-.contact-banner.left .contact-details p:nth-child(even) a:hover {
-  color: #23527c;
-  text-decoration: none;
-}
-.contact-banner.left h3 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
-  font-weight: bolder;
-  margin:0;
-  padding: 0;
-}
-.contact-banner.left blockquote {
-  padding: 0;
-  padding-left: 0.7em;
-  border-left: 3px solid #95c6d8;
+    padding: 6%;
 }
 
+.contact-form .form-control {
+    border-radius: 0;
+    border-color: rgba(48, 48, 48, 0.4);
+    padding: 7px 20px 9px;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+}
+
+.contact-form button {
+    background-color: #303030;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    color: white;
+    border-radius: 0;
+    border-width: 0;
+}
+
+.contact-form button:hover {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.contact-banner.left .contact-details p {
+    display: table-cell;
+    padding: 5px;
+    line-height: 1.7;
+}
+
+.contact-banner.left > p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px auto;
+    display: block;
+    color: #616161;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.contact-banner.left .contact-details p:nth-child(odd) {
+    font-family: 'Josefin Sans', sans-serif;
+    white-space: pre;
+    color: #616161;
+    font-weight: bold;
+}
+
+.contact-banner.left .contact-details p:nth-child(even) a {
+    padding: 10px;
+    color: black;
+}
+
+.contact-banner.left .contact-details p:nth-child(even) a:hover {
+    color: #23527c;
+    text-decoration: none;
+}
+
+.contact-banner.left h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-banner.left blockquote {
+    padding: 0;
+    padding-left: 0.7em;
+    border-left: 3px solid #95c6d8;
+}
 
 .vi-maincontent-list {
-  padding-top: 7%;
+    padding-top: 7%;
 }
-.vi-maincontent-list li {
- line-height: 2;
- list-style-type: none;
- /*list-style-image: url('https://www.tutorialspoint.com/images/icon-bullet.png');*/
-}
-.vi-maincontent-list li::before {
-  font-family: 'Glyphicons Halflings';
-  color: #95c6d8;
-  content: "\e014";
-  position: relative;
-  left: -12px;
-  top: 2px;
-}
-.breadcrumb {
-  background-color: transparent;
-}
-.breadcrumb a{
-  color:black;
-}
-.ve-top-banner-col2, .ve-top-banner-col {
-  background: linear-gradient(to right, rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.8)), url('http://webdesign-finder.com/html/look/images/parallax/breadcrumbs2.jpg');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
 
+.vi-maincontent-list li {
+    line-height: 2;
+    list-style-type: none;
 }
-.ve-top-banner-col2, .ve-top-banner-col2 .ve-top-banner p {
-  background:white;
+
+.vi-maincontent-list li::before {
+    font-family: 'Glyphicons Halflings';
+    color: #95c6d8;
+    content: "\e014";
+    position: relative;
+    left: -12px;
+    top: 2px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.breadcrumb a {
+    color: black;
+}
+
+.ve-top-banner-col2,
+.ve-top-banner-col {
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.8)), url('http://webdesign-finder.com/html/look/images/parallax/breadcrumbs2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.ve-top-banner-col2,
+.ve-top-banner-col2 .ve-top-banner p {
+    background: white;
 }
 
 .ve-top-banner-col2 .ve-top-banner {
-  border-bottom-width: 0;
+    border-bottom-width: 0;
 }
-.ve-top-banner {
-  margin: 10% auto 8%;
-  display: inline-block;
-  border-top:1px solid black;
-  border-bottom:1px solid black;
 
+.ve-top-banner {
+    margin: 10% auto 8%;
+    display: inline-block;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
-.maincontent{
-  line-height: 26px;
-  letter-spacing: 0.01em;
+
+.maincontent {
+    line-height: 26px;
+    letter-spacing: 0.01em;
 }
 
 .ve-top-banner p {
-  display: inline-block;
-  position: relative;
-  font-family:'PT serif',"Open sans", sans-serif, serif;
-  background-color: #f4f5f6;
-  padding: 5px 10px;
-  top: -15px;
+    display: inline-block;
+    position: relative;
+    font-family: 'PT serif', "Open sans", sans-serif, serif;
+    background-color: #f4f5f6;
+    padding: 5px 10px;
+    top: -15px;
 }
+
 .ve-top-banner h1 {
-  color: #303030;
-  margin-top: -0.6em;
-  /*margin-top: -20px;*/
-  margin-bottom: 0.5em;
-  font-size: 32px;
-  font-weight: bolder;
-  font-family: sans-serif, serif;
+    color: #303030;
+    margin-top: -0.6em;
+    /*margin-top: -20px;*/
+    margin-bottom: 0.5em;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: sans-serif, serif;
 }
 
 @media screen and (min-width: 780px) {
-  .ve-top-banner h1 {
-    margin-top: -0.4.8em;
-    margin-bottom: 0.5em;
-    font-size: 50px;
-  }
-
-  .ve-top-banner p {
-    font-size: 20px;
-  }
-
-}
-.recent-post-images li,a{
-  list-style: none;
-}
-.recent-post-images{
-  display: flex;
-}
-.recent-post-div h4{
-  text-transform: uppercase;
-  font-size: 15px;
-  color: white;
-  border-left: 3px solid skyblue;
-  padding-left: 20px;
-  height: 23px;
-  margin-top: 5px;
-  opacity: 0.7;
-  font-size: 15px;
-}
-.own-styles a{
-  font-size: 15px;
-  margin-top: -3px;
-  display: flex;
-  color: white;
-  font-weight: bold;
-  opacity: 1;
-}
-.own-styles span{
-  font-size: 13px;
-  color: skyblue;
-  margin-left: 15px;
-}
-.padding-image{
-  margin-top: 40px;
-}
-.media-padding{
-  margin-bottom: 20px;
+    .ve-top-banner h1 {
+        margin-top: -0.4.8em;
+        margin-bottom: 0.5em;
+        font-size: 50px;
+    }
+    .ve-top-banner p {
+        font-size: 20px;
+    }
 }
 
-.search-bar button{
-  background-color: transparent;
-  color: skyblue;
+.recent-post-images li,
+a {
+    list-style: none;
 }
-.fashion-industry{
-  background-color: orange;
-  opacity: 0.4;
-  height: 350px;
+
+.recent-post-images {
+    display: flex;
+}
+
+.recent-post-div h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    border-left: 3px solid skyblue;
+    padding-left: 20px;
+    height: 23px;
+    margin-top: 5px;
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+.own-styles a {
+    font-size: 15px;
+    margin-top: -3px;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.own-styles span {
+    font-size: 13px;
+    color: skyblue;
+    margin-left: 15px;
+}
+
+.padding-image {
+    margin-top: 40px;
+}
+
+.media-padding {
+    margin-bottom: 20px;
+}
+
+.search-bar button {
+    background-color: transparent;
+    color: skyblue;
+}
+
+.fashion-industry {
+    background-color: orange;
+    opacity: 0.4;
+    height: 350px;
 }
