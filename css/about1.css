@@ -1,11 +1,12 @@
 .vi-maincontent-list {
     padding-top: 7%;
 }
+
 .vi-maincontent-list li {
-   line-height: 2;
-   list-style-type: none;
-   /*list-style-image: url('https://www.tutorialspoint.com/images/icon-bullet.png');*/
+    line-height: 2;
+    list-style-type: none;
 }
+
 #myCarousel3 .item.active {
     padding-left: 15%;
     padding-right: 15%;
@@ -20,38 +21,47 @@
     left: -12px;
     top: 2px;
 }
+
 .breadcrumb {
     background-color: transparent;
 }
-.breadcrumb-item a{
-  color:black;
-}
-.ve-top-banner-col2, .ve-top-banner-col {
-  background: linear-gradient(to right, rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.8)), url('../images/breadcrumbs5.jpg');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
 
+.breadcrumb-item a {
+    color: black;
 }
-.ve-top-banner-col2, .ve-top-banner-col2 .ve-top-banner p {
-    background:white;
+
+.ve-top-banner-col2,
+.ve-top-banner-col {
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.8)), url('../images/breadcrumbs5.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
+
+.ve-top-banner-col2,
+.ve-top-banner-col2 .ve-top-banner p {
+    background: white;
+}
+
 .ve-top-banner-col2 .ve-top-banner {
     border-bottom-width: 0;
 }
+
 .ve-top-banner {
-    margin: 10% auto 8% ;
+    margin: 10% auto 8%;
     display: inline-block;
-    border-top:1px solid black;
-    border-bottom:1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
+
 .ve-top-banner p {
     display: inline-block;
     position: relative;
-    font-family:'PT serif',"Open sans", sans-serif, serif;
+    font-family: 'PT serif', "Open sans", sans-serif, serif;
     background-color: #f4f5f6;
     padding: 5px 10px;
     top: -15px;
 }
+
 .ve-top-banner h1 {
     color: #303030;
     margin-top: -0.6em;
@@ -61,6 +71,7 @@
     font-weight: bolder;
     font-family: sans-serif, serif;
 }
+
 @media screen and (min-width: 780px) {
     .ve-top-banner h1 {
         margin-top: -0.4.8em;
@@ -71,45 +82,47 @@
         font-size: 20px;
     }
 }
+
 p.mycontent {
     line-height: 1.7;
     letter-spacing: 0.5px;
     word-spacing: 1.5px;
 }
 
-/*.ve-top-banner-col2 .maincontent p {
-    text-align: center;
-}
-*/
 /*slider section starts*/
+
 .slider-background-section {
-    background:url("../images/8.jpg");
+    background: url("../images/8.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
+
 .slider-background-section > div {
     background-color: rgba(149, 198, 216, 0.8);
 }
 
-
-.quote-sign{
-    font-size:20em;
+.quote-sign {
+    font-size: 20em;
 }
-.josefin{
+
+.josefin {
     font-family: 'Cambria';
 }
-.quote-sign::before{
+
+.quote-sign::before {
     content: '”';
     display: block;
     position: relative;
     top: 90px;
     line-height: 75px;
 }
-.slider-heading{
+
+.slider-heading {
     margin-top: 100px;
 }
-.slider-heading h1{
+
+.slider-heading h1 {
     font-size: 45px;
     color: black;
     font-family: 'Allerta';
@@ -118,70 +131,80 @@ p.mycontent {
 }
 
 .slider-heading span {
-    background:#95c6d8; 
-    padding:0 10px;
+    background: #95c6d8;
+    padding: 0 10px;
     opacity: 1;
     font-size: 25px;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
-.carousel-inner{
+
+.carousel-inner {
     height: 200px;
 }
 
-.desing-manager span{
+.desing-manager span {
     text-transform: capitalize;
     font-size: 20px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: black;
     font-weight: bold;
 }
-.desing-manager{
+
+.desing-manager {
     margin-top: 20px;
 }
-.back-ground-slider{
+
+.back-ground-slider {
     width: 100%;
     height: 400px;
 }
 
-.carousel-indicators{
+.carousel-indicators {
     margin-bottom: 20px;
     height: auto;
 }
-.service-right{
+
+.service-right {
     text-align: left;
     position: relative;
     text-transform: uppercase;
     font-size: 20px;
 }
-.service-right p{
-    display:inline-block; 
+
+.service-right p {
+    display: inline-block;
     position: absolute;
     background-color: white;
-    top:10px;
+    top: 10px;
 }
-.service-right h1{
-   border-top: 1px solid black; 
-   padding-top: 5%;
-   display:inline-block;
-   font-size: 50px;
-   font-weight: bold;
+
+.service-right h1 {
+    border-top: 1px solid black;
+    padding-top: 5%;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
 }
- .vi-points h3::before {
+
+.vi-points h3::before {
     font-family: 'Glyphicons Halflings';
     position: relative;
     left: -5%;
- }
- .vi-points div:nth-child(3) h3::before {
+}
+
+.vi-points div:nth-child(3) h3::before {
     content: "\e046";
- }
+}
 
 .vi-points div:nth-child(2) h3::before {
     content: "\e038";
- }
- .vi-points div:nth-child(4) h3::before {
+}
+
+.vi-points div:nth-child(4) h3::before {
     content: "\e139";
- }
+}
+
 .vi-points div:nth-child(1) h3::before {
     content: "\e135";
- }
+}

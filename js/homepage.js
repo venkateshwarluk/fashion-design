@@ -3,8 +3,8 @@ $(document).ready(function() {
     (function() {
         var preview = $('#full-screen-img-preview-overlay');
         var centerPreviewImg = preview.children('.center-image');
-        var nextImgPreviewCtrl = preview.children('.preview-next');
-        var previousImgPreviewCtrl = preview.children('.preview-previous');
+        var nextImgPreviewCtrl = preview.find('.pager .preview-next');
+        var previousImgPreviewCtrl = preview.find('.pager .preview-previous');
         var currentGalCol;
 
         preview.children('.preview-close').click(hidePreview)
@@ -25,27 +25,52 @@ $(document).ready(function() {
             preview.hide()
         }
 
-        function nextImgPreview() {
-            currentGalCol = currentGalCol.next();
-            toggleNextPrevCtrls(currentGalCol)
-            var imgSrc = currentGalCol.find('img').attr('src');
-            centerPreviewImg.attr('src', imgSrc);
-            preview.show();
+        function nextImgPreview(e) {
+            e.preventDefault()
+            toggleNextPrevCtrls(currentGalCol);
+            var isDisabled = nextImgPreviewCtrl.parent().hasClass('disabled');
+
+            if (!isDisabled) {
+                currentGalCol = currentGalCol.next();
+                var imgSrc = currentGalCol.find('img').attr('src');
+                centerPreviewImg.attr('src', imgSrc);
+                preview.show();
+                toggleNextPrevCtrls(currentGalCol);
+            }
         }
 
-        function previousImgPreview() {
-            currentGalCol = currentGalCol.prev();
-            toggleNextPrevCtrls(currentGalCol)
-            var imgSrc = currentGalCol.find('img').attr('src');
-            centerPreviewImg.attr('src', imgSrc);
-            preview.show();
+        function previousImgPreview(e) {
+            e.preventDefault();
+            toggleNextPrevCtrls(currentGalCol);
+            var isDisabled = previousImgPreviewCtrl.parent().hasClass('disabled')
+            if (!isDisabled) {
+                currentGalCol = currentGalCol.prev();
+                var imgSrc = currentGalCol.find('img').attr('src');
+                centerPreviewImg.attr('src', imgSrc);
+                preview.show();
+            }
         }
 
         function toggleNextPrevCtrls(currentGalCol) {
             var previousCol = currentGalCol.prev();
             var nextCol = currentGalCol.next();
-            (nextCol.length === 0) ? nextImgPreviewCtrl.prop('disabled', true): nextImgPreviewCtrl.prop('disabled', false);
-            (previousCol.length === 0) ? previousImgPreviewCtrl.prop('disabled', true): previousImgPreviewCtrl.prop('disabled', false);
+            if (nextCol.length > 0) {
+                nextImgPreviewCtrl.parent().removeClass('disabled');
+            } else {
+                nextImgPreviewCtrl.parent().addClass('disabled');
+            }
+
+            if (previousCol.length > 0) {
+                previousImgPreviewCtrl.parent().removeClass('disabled');
+            } else {
+                previousImgPreviewCtrl.parent().addClass('disabled');
+            }
+
+            if ((previousCol.length === 0) && (nextCol.length === 0)) {
+                nextImgPreviewCtrl.parent().addClass('disabled');
+                previousImgPreviewCtrl.parent().addClass('disabled');
+            }
+
         }
     })();
 
@@ -67,7 +92,7 @@ $(document).ready(function() {
 
         function galColsController(key) {
             if (key === 'all') {
-                $('.galary-col').each(function () {
+                $('.galary-col').each(function() {
                     show(this)
                 });
             } else {

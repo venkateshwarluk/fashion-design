@@ -290,23 +290,6 @@
             </div>
         </div>
     </div>
-    <script>
-    ;
-    (function() {
-        var phText;
-        var inputEs = document.querySelectorAll('.contact-form .form-control');
-        inputEs.forEach(function(x) {
-            x.addEventListener('focus', function(e) {
-                phText = x.placeholder;
-                x.placeholder = '';
-            })
-            x.addEventListener('blur', function(e) {
-                x.placeholder = phText;
-            })
-        })
-
-    }());
-    </script>
 </body>
 
 </html>
