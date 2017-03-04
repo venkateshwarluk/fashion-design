@@ -2,10 +2,10 @@ $(document).ready(function() {
 
     (function() {
         var preview = $('#full-screen-img-preview-overlay');
+        var imgSrcs = [];
         var centerPreviewImg = preview.children('.center-image');
         var nextImgPreviewCtrl = preview.find('.pager .preview-next');
         var previousImgPreviewCtrl = preview.find('.pager .preview-previous');
-        var currentGalCol;
 
         preview.children('.preview-close').click(hidePreview)
         nextImgPreviewCtrl.click(nextImgPreview)
@@ -14,64 +14,82 @@ $(document).ready(function() {
         $('.gal-overlay-top .icon-image.left').click(openPreview);
 
         function openPreview() {
-            currentGalCol = $(this).parents('.galary-col');
-            toggleNextPrevCtrls(currentGalCol)
-            var imgSrc = currentGalCol.find('img').attr('src');
+            imgSrcs = [];
+            var imgSrc = $(this).parents('.galary-col').find('img').attr('src');
             centerPreviewImg.attr('src', imgSrc);
+            extractImgSrcs();
+            var currentImgIndex = imgSrcs.indexOf(imgSrc);
+            toggleNextPrevCtrls(currentImgIndex)
             preview.show();
         }
 
+        function extractImgSrcs() {
+            $('.galary-col').each(function (i, el) {
+                var imgSrc = $(el).find('img').attr('src');
+                var isExist = (imgSrcs.indexOf(imgSrc) !== - 1);
+                if($(el).css('display') === 'block' && (!isExist)) {
+                    imgSrcs.push(imgSrc);
+                }
+            });
+        }
+
         function hidePreview() {
-            preview.hide()
+            preview.hide();
+        }
+
+        function toggleNextPrevCtrls(currentImgIndex) {
+            var firstIndex = 0;
+            var totalNumberOfImages = imgSrcs.length;
+            var lastIndex = totalNumberOfImages - 1;
+
+            if (currentImgIndex === firstIndex) {
+                previousImgPreviewCtrl.parent().addClass('disabled');
+            } else {
+                previousImgPreviewCtrl.parent().removeClass('disabled');
+            }
+
+            if ( currentImgIndex === lastIndex ) {
+                nextImgPreviewCtrl.parent().addClass('disabled');
+            } else {
+                nextImgPreviewCtrl.parent().removeClass('disabled');
+            }
+
+            if (totalNumberOfImages === 1) {
+                nextImgPreviewCtrl.parent().addClass('disabled');
+                previousImgPreviewCtrl.parent().addClass('disabled');
+            }
+
+
         }
 
         function nextImgPreview(e) {
             e.preventDefault()
-            toggleNextPrevCtrls(currentGalCol);
             var isDisabled = nextImgPreviewCtrl.parent().hasClass('disabled');
+            var imgSrc = centerPreviewImg.attr('src');
+            var currentImgIndex = imgSrcs.indexOf(imgSrc);
+            var nextImgIndex = currentImgIndex + 1;
 
             if (!isDisabled) {
-                currentGalCol = currentGalCol.next();
-                var imgSrc = currentGalCol.find('img').attr('src');
-                centerPreviewImg.attr('src', imgSrc);
-                preview.show();
-                toggleNextPrevCtrls(currentGalCol);
+                centerPreviewImg.attr('src', imgSrcs[nextImgIndex]);
+                currentImgIndex = nextImgIndex;
             }
+            toggleNextPrevCtrls(currentImgIndex)
         }
 
         function previousImgPreview(e) {
             e.preventDefault();
-            toggleNextPrevCtrls(currentGalCol);
-            var isDisabled = previousImgPreviewCtrl.parent().hasClass('disabled')
+            var isDisabled = previousImgPreviewCtrl.parent().hasClass('disabled');
+            var imgSrc = centerPreviewImg.attr('src');
+            var currentImgIndex = imgSrcs.indexOf(imgSrc);
+            var previousImgIndex = currentImgIndex - 1;
+
             if (!isDisabled) {
-                currentGalCol = currentGalCol.prev();
-                var imgSrc = currentGalCol.find('img').attr('src');
-                centerPreviewImg.attr('src', imgSrc);
-                preview.show();
+                centerPreviewImg.attr('src', imgSrcs[previousImgIndex]);
+                currentImgIndex = previousImgIndex;
             }
+            toggleNextPrevCtrls(currentImgIndex)
         }
 
-        function toggleNextPrevCtrls(currentGalCol) {
-            var previousCol = currentGalCol.prev();
-            var nextCol = currentGalCol.next();
-            if (nextCol.length > 0) {
-                nextImgPreviewCtrl.parent().removeClass('disabled');
-            } else {
-                nextImgPreviewCtrl.parent().addClass('disabled');
-            }
-
-            if (previousCol.length > 0) {
-                previousImgPreviewCtrl.parent().removeClass('disabled');
-            } else {
-                previousImgPreviewCtrl.parent().addClass('disabled');
-            }
-
-            if ((previousCol.length === 0) && (nextCol.length === 0)) {
-                nextImgPreviewCtrl.parent().addClass('disabled');
-                previousImgPreviewCtrl.parent().addClass('disabled');
-            }
-
-        }
     })();
 
 
