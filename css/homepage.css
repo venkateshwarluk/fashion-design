@@ -121,3 +121,102 @@
     width: 75%;
     height: 500px;
 }
+.model-casting {
+    padding: 0;
+    margin: 0;
+}
+.model-casting h2 ,h1{
+text-transform: uppercase;
+}
+/*//portfolio-section*/
+.portfolia-section h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.portfolia {
+    margin-top: 50px;
+}
+
+.portfolia-section h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+/*background section*/
+.slider-background-section {
+    background: url("../images/8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slider-background-section > div {
+    background-color: rgba(149, 198, 216, 0.8);
+}
+
+.quote-sign {
+    font-size: 20em;
+}
+
+.josefin {
+    font-family: 'Cambria';
+}
+
+.quote-sign::before {
+    content: '”';
+    display: block;
+    position: relative;
+    top: 90px;
+    line-height: 75px;
+}
+
+.slider-heading {
+    margin-top: 100px;
+}
+
+.slider-heading h1 {
+    font-size: 45px;
+    color: black;
+    font-family: 'Allerta';
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.slider-heading span {
+    background: #95c6d8;
+    padding: 0 10px;
+    opacity: 1;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.carousel-inner {
+    height: 380pxpx;
+}
+
+.desing-manager span {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.desing-manager {
+    margin-top: 20px;
+}
+
+.back-ground-slider {
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-indicators {
+    margin-bottom: 20px;
+    height: auto;
+}
